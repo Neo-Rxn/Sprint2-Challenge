@@ -5,7 +5,7 @@
 }
 
 body{
-    max-width: 320px;
+    min-width: 320px;
     height: 1080px;
     font-family: 'Roboto', sans-serif;
 }
@@ -18,6 +18,7 @@ body{
 }
 
 #header__form{
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
     background-size: cover;
 }
@@ -30,7 +31,7 @@ body{
 }
 #card{
     max-width: 100%;
-    height: 20%;
+    height: 15%;
     margin: 15px;
     background-image: url(../resources/images/la-bamba-de-areco.jpg);
     background-size:cover;
@@ -40,6 +41,9 @@ body{
    
 }
 #card__contents{
+    display: flex;
+    align-items: flex-end;
+    justify-content:left;
     width: 100%;
     height: 100%;
     padding: 1px;
@@ -47,5 +51,17 @@ body{
     background-size: cover;
     border-radius: 15px;
     color: white;
-    font-size: 12px;
+    
+}
+
+#lowerText{
+    margin: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#lowerText>h2{
+    font-weight: 700;
+    font-size: 16px;
 }
