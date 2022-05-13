@@ -5,7 +5,7 @@
 }
 
 body {
-  min-width: 320px;
+  /* min-width: 320px; */
   max-width: 640px;
   height: 1080px;
   font-family: "Roboto", sans-serif;
@@ -50,7 +50,7 @@ body {
 }
 
 .hotel__Search {
-    min-width: 320px;
+    /* min-width: 320px; */
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -162,6 +162,99 @@ body {
     font-size: 14px;
     /* padding-left:  10px;
     padding-right: 5px; */
+}
+.dates__price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 16px;
+ }
+.price{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-right: 5px;
+}
+.price > img{
+   width: 16px;
+   height: 30px;
+   margin-right: 0;
+   margin-left: 0;
+   background-color: white;
+ }
+ .price > input{
+    width: 100%;
+    height:30px ;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    padding-left:  10px;
+    padding-right: 5px; 
+}
+.rooms{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.rooms > img{
+ width: 16px;
+ height: 30px;
+ margin-right: 0;
+ margin-left: 0;
+ background-color: white;
+}
+.select__Price{
+  width: 100%;
+  margin-left: 0;
+  height: 30px;
+  
+}
+.select__Rooms{
+  width: 100%;
+  margin-left: 0;
+  height: 30px;
+  
+} 
+.select__Price>select{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 6px;
+  height: 30px;
+  border: 0px solid  rgba(228, 228, 228, 0.9);
+  
+}
+.select__Rooms>select{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 6px;
+  height: 30px;
+  border: 0px solid  rgba(228, 228, 228, 0.9);
+  }
+.button__Clear{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 7px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.clear{
+color: #fff;
+width: 59px;
+height: 19px;
+background: rgba(51, 51, 51, 0.88);
+border-radius: 6px;
+margin: 6px;
 }
 
 /* .options__image > img{
