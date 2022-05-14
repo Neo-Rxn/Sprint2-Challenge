@@ -5,18 +5,15 @@
 }
 
 body {
-  /* min-width: 320px; */
-  max-width: 640px;
+  min-width: 320px;
+  max-width: 480px;
   height: 1080px;
   font-family: "Roboto", sans-serif;
 }
 
 .header {
-  /* min-width: 320px;
-    max-width: 640px; */
   width: 100%;
-  height: 30%;
-  /* min-height: 214px; */
+  height: 230px;
   background-image: url(../resources/images/cover.png);
   background-size: cover;
 }
@@ -50,13 +47,12 @@ body {
 }
 
 .hotel__Search {
-    /* min-width: 320px; */
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: center; 
   background-color: rgba(228, 228, 228, 0.9);
-  margin: 20px 16px;
+  margin: 0 16px;
   padding: 10px;
   border-radius: 8px;
 }
@@ -84,7 +80,6 @@ body {
   margin-left: 0;
   margin-right: 6px;
   height: 30px;
-  /* border: 0px solid  rgba(228, 228, 228, 0.9); */
   margin-top: 8px;
 }
 
@@ -92,11 +87,9 @@ body {
   width: 100%;
   height: 30px;
   border: none;
-  /* margin-left: -6px; */
   background-color: white;
   font-size: 14px;
 }
-
 
 .dates {
     width: 100%;
@@ -105,15 +98,14 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     margin: 5px 16px;
-    /* padding-left: 5px; */
 }
 
 .checkIn{   
     width: 100%;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row;
     justify-content: left;
-    align-items: center;
+    align-items: center; */
     margin-right: 5px;
 }
 
@@ -131,16 +123,17 @@ body {
     background-color: white;
     border: none;
     font-size: 14px;
-    padding-left:  10px;
+    /* padding-left:  10px; */
 }
  /* Salida */
 
  .checkOut{
   width: 100%;
+  height:30px;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;
   justify-content: left;
-  align-items: center;
+  align-items: center; */
   margin-right: 5px;
 }
 
@@ -158,7 +151,7 @@ body {
   background-color: white;
   border: none;
   font-size: 14px;
-  padding-left:  10px;
+  /* padding-left:  10px; */
     
 }
 .dates__price {
@@ -213,12 +206,14 @@ body {
   width: 100%;
   margin-left: 0;
   height: 30px;
+  background-color: white;
   
 }
 .select__Rooms{
   width: 100%;
   margin-left: 0;
   height: 30px;
+  
   
 } 
 .select__Price>select{
@@ -227,6 +222,7 @@ body {
   margin-right: 6px;
   height: 30px;
   border: 0px solid  rgba(228, 228, 228, 0.9);
+  background-color: white;
   
 }
 .select__Rooms>select{
@@ -235,6 +231,7 @@ body {
   margin-right: 6px;
   height: 30px;
   border: 0px solid  rgba(228, 228, 228, 0.9);
+  background-color: white;
   }
 .button__Clear{
   display: flex;
@@ -252,18 +249,9 @@ width: 59px;
 height: 19px;
 background: rgba(51, 51, 51, 0.88);
 border-radius: 6px;
+border: none;
 margin: 6px;
 }
-
-/* .options__image > img{
-    width: 20px;
-    height: 24px;
-    margin-right: 0;
-    margin-top: 12px;
-    margin-left: 0;
-    padding-left: 0;
-    background-color: white;
-} */
 
 .main {
   width: 100%;
