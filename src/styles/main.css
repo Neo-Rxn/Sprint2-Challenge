@@ -1,0 +1,75 @@
+
+.main {
+    width: 100%;
+    height: 70%;
+    margin-top: 10px;
+    overflow-y: scroll;
+  }
+  
+  .card {
+    max-width: 100%;
+    height: 100px;
+    margin: 15px;
+    background-image: url(../resources/images/la-bamba-de-areco.jpg);
+    background-size: 100% 100px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  
+  #card__contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    border-radius: 15px;
+    color: white;
+  }
+  
+  .card__more {
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 1px 0;
+    border: 1px solid white;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  #lowerText {
+    margin: 10px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  #lowerText > h2 {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  #lowerText > img {
+    max-width: 15px;
+    height: auto;
+  }
+  
+  .card__Bookit {
+    align-items: flex-end;
+    justify-content: right;
+    border: 1px solid white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    padding: 1px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
