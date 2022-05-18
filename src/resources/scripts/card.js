@@ -4,10 +4,10 @@ import { hotelsPrices } from "./price.js";
 
 const container = document.getElementById("main")
 
-export const showCard = async () => {
-    const hotelData = await requestHotelApi();
-
-    hotelData.forEach(element => {
+export const showCard = async (hoteles) => {
+    // const hotelData = await requestHotelApi();
+    container.innerHTML =""
+    hoteles.forEach(element => {
         container.innerHTML += ` 
         <div id="card" class="card">
        
@@ -27,7 +27,11 @@ export const showCard = async () => {
           </div>
         </div>
       `
-    //   document.getElementById("card").style.backgroundImage = "https://i.ibb.co/b57KX1g/sainte-jeanne.jpg";
+      let bg =document.getElementsByClassName("card")
+      // console.log(bg[hotelData.indexOf(element)])
+  
+      bg[hoteles.indexOf(element)].style.backgroundImage = `url(${element.photo})`
+      // bg.style.backgroundImage = `url(${element.photo})`
 
     });
 

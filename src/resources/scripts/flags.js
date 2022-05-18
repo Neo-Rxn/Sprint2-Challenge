@@ -1,7 +1,7 @@
 export const selectedFlags = (countryName) => {
     switch (countryName){
         case "Argentina" :
-            return "./src/resources/images/Argentina.svg";
+            return "./src/resources/images/argentina.svg";
             break;
         case "Chile" :
             return "./src/resources/images/chile.svg";
