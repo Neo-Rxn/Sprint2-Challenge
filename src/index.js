@@ -1,5 +1,7 @@
 import { showCard } from "./resources/scripts/card.js";
 import { requestHotelApi } from "./resources/scripts/request.js";
+import { priceNumber } from "./resources/scripts/priceNumber.js";
+import { roomSize } from "./resources/scripts/roomSize.js";
 
 const hotelData = await requestHotelApi();
 showCard(hotelData);
@@ -33,16 +35,28 @@ const countryFilter = () => {
     return hotelData.filter(
         (element) => country.value != "all" ? element.country === country.value : element
     );
-    // if (filteredCountries.length != 0) {
-    //     showCard(filteredCountries);
-    // } else {
-    //     showCard(hotelData);
-    
 };
 
+const priceFilter = () => {
+    return hotelData.filter(
+        (element) => price.value != "all" ? element.price === priceNumber(price.value) : element
+    );
+};
+
+const roomsFilter = () => {
+    return hotelData.filter(
+        (element) => rooms.value != "all" ? roomSize(element.rooms) === rooms.value : element
+    );
+};
+
+
+
 country.addEventListener("change", () => showCard(countryFilter()));
+price.addEventListener("change", () => showCard(priceFilter()));
+rooms.addEventListener("change", () => showCard(roomsFilter()));
 
-const filtros = document.getElementsByClassName("filter");
-// console.log(filtros)
+// testing area
 
-// filtros[0].addEventListener("change", () => console.log(filtros[3].value));
+// let timestamp = 1653349250121;
+// let d = new Date(timestamp);
+// console.log(d)
