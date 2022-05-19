@@ -29,20 +29,20 @@ checkOut.addEventListener("change", function () {
 // console.log(price.value);
 // console.log(rooms.value);
 
-const countryFilter = (changedCountry) => {
-    const filteredCountries = hotelData.filter(
-        (element) => element.country === changedCountry
+const countryFilter = () => {
+    return hotelData.filter(
+        (element) => country.value != "all" ? element.country === country.value : element
     );
-    if (filteredCountries.length != 0) {
-        showCard(filteredCountries);
-    } else {
-        showCard(hotelData);
-    }
+    // if (filteredCountries.length != 0) {
+    //     showCard(filteredCountries);
+    // } else {
+    //     showCard(hotelData);
+    
 };
 
-country.addEventListener("change", () => countryFilter(country.value));
+country.addEventListener("change", () => showCard(countryFilter()));
 
 const filtros = document.getElementsByClassName("filter");
 // console.log(filtros)
 
-filtros[0].addEventListener("change", () => console.log(filtros[3].value));
+// filtros[0].addEventListener("change", () => console.log(filtros[3].value));
