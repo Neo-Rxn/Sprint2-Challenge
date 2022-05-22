@@ -49,12 +49,12 @@
         <div class="dates">
           <div class="checkIn">
            <img src="./src/resources/images/checkin.svg" alt="checkin">
-            <input type="date" id="checkIn" name="checkIn" class="filter">
+            <input type="date" min="<?=date('Y-m-d')>" value="<?=date('Y-m-d')>" id="checkIn" name="checkIn" class="filter" >
          </div>
 
           <div class="checkOut">
             <img src="./src/resources/images/checkout.svg" alt="checkout">
-             <input type="date" id="checkOut" name="checkOut" class="filter">
+             <input type="date" id="checkOut" min="<?=date('Y-m-d')>" value="<?=date('Y-m-d')>" name="checkOut" class="filter">
           </div>
                  
         </div>

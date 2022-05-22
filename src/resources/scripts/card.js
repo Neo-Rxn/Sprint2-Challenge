@@ -5,7 +5,6 @@ import { hotelsPrices } from "./price.js";
 const container = document.getElementById("main")
 
 export const showCard = async (hoteles) => {
-    // const hotelData = await requestHotelApi();
     container.innerHTML =""
     hoteles.forEach(element => {
         container.innerHTML += ` 
@@ -28,11 +27,7 @@ export const showCard = async (hoteles) => {
         </div>
       `
       let bg =document.getElementsByClassName("card")
-      // console.log(bg[hotelData.indexOf(element)])
-  
       bg[hoteles.indexOf(element)].style.backgroundImage = `url(${element.photo})`
-      // bg.style.backgroundImage = `url(${element.photo})`
-
     });
 
 }
