@@ -3,42 +3,35 @@ import { requestHotelApi } from "./resources/scripts/request.js";
 import { priceNumber } from "./resources/scripts/priceNumber.js";
 import { roomSize } from "./resources/scripts/roomSize.js";
 import { initialDates } from "./resources/scripts/initialDates.js";
-
-initialDates();
-const hotelData = await requestHotelApi();
-showCard(hotelData);
-
+import { clearData } from "./resources/scripts/clear.js";
+import { filterDates } from "./resources/scripts/filterDates.js";
 
 const country = document.getElementById("countries");
 const checkIn = document.getElementById("checkIn");
 const checkOut = document.getElementById("checkOut");
 const price = document.getElementById("price");
 const rooms = document.getElementById("rooms");
+const clear = document.getElementById("clear");
 
-// checkIn.addEventListener("change", function () {
-//     let input = this.value;
-//     let dateEntered = new Date(input);
-//     console.log(input); //e.g. 2015-11-13
-//     console.log(dateEntered); //e.g. Fri Nov 13 2015 00:00:00 GMT+0000 (GMT Standard Time)
-// });
 
-// checkOut.addEventListener("change", function () {
-//     let input = this.value;
-//     let dateEntered = new Date(input);
-//     console.log(input); //e.g. 2015-11-13
-//     console.log(dateEntered); //e.g. Fri Nov 13 2015 00:00:00 GMT+0000 (GMT Standard Time)
-// });
+initialDates();
+// clearData();
+const hotelData = await requestHotelApi();
+showCard(hotelData);
 
-// console.log(checkIn.value)
-// console.log(checkOut.value)
-// console.log(price.value);
-// console.log(rooms.value);
 
 const countryFilter = () => {
     return hotelData.filter(
         (element) => country.value != "all" ? element.country === country.value : element
     );
 };
+
+const dateFilter = () => {
+    return hotelData.filter(
+        (element) => checkOut.value != "" ? (element.availabilityFrom >= filterDates(checkIn.value)  && element.availabilityTo <= filterDates(checkOut.value))  : element
+    );
+};
+
 
 const priceFilter = () => {
     return hotelData.filter(
@@ -52,8 +45,8 @@ const roomsFilter = () => {
     );
 };
 
-
-
 country.addEventListener("change", () => showCard(countryFilter()));
 price.addEventListener("change", () => showCard(priceFilter()));
 rooms.addEventListener("change", () => showCard(roomsFilter()));
+checkOut.addEventListener("change", () => showCard(dateFilter()));
+clear.addEventListener("click", () => clearData());

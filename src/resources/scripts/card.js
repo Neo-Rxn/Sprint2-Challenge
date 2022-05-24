@@ -1,4 +1,4 @@
-import { requestHotelApi } from "./request.js";
+// import { requestHotelApi } from "./request.js";
 import { selectedFlags } from "./flags.js";
 import { hotelsPrices } from "./price.js";
 
@@ -13,7 +13,6 @@ export const showCard = async (hoteles) => {
           <div id="card__contents" class="card__contents">
             <div class="card__more">
               <span>&nbsp; + &nbsp;</span>
-    
             </div>
             <div id="lowerText">
               <h2>${element.name}</h2>
