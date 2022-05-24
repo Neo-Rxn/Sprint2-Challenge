@@ -8,8 +8,7 @@ export const showCard = async (hoteles) => {
     container.innerHTML =""
     hoteles.forEach(element => {
         container.innerHTML += ` 
-        <div id="card" class="card">
-       
+        <div id="card" class="card">       
           <div id="card__contents" class="card__contents">
             <div class="card__more">
               <span>&nbsp; + &nbsp;</span>
@@ -28,5 +27,4 @@ export const showCard = async (hoteles) => {
       let bg =document.getElementsByClassName("card")
       bg[hoteles.indexOf(element)].style.backgroundImage = `url(${element.photo})`
     });
-
 }

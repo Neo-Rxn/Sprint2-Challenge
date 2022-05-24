@@ -7,10 +7,8 @@ export const clearData = async () => {
     const checkOut = document.getElementById("checkOut");
     const price = document.getElementById("price");
     const rooms = document.getElementById("rooms");
+    // let fechaInicio = new Date(checkIn.value);
 
-    console.log(typeof (checkIn.value))
-    let fechaInicio = new Date(checkIn.value);
-    console.log(fechaInicio.getTime())
 
     country.value = "all";
     price.value = "all";
