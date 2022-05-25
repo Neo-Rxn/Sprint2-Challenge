@@ -19,15 +19,24 @@ initialDates();
 showCard(hotelData);
 
 const Filter = () => {
-    return hotelData.filter(
-        (element) => country.value != "all" ? element.country === country.value : element
-    ).filter(
-        (element) => checkOut.value != "" ? (dateRange(element.availabilityFrom) >= filterDates(checkIn.value)  && dateRange(element.availabilityTo) <= filterDates(checkOut.value))  : element
-    ).filter(
-        (element) => price.value != "all" ? element.price === priceNumber(price.value) : element
-    ).filter(
-        (element) => rooms.value != "all" ? roomSize(element.rooms) === rooms.value : element
-    );
+    return hotelData
+        .filter((element) =>
+            country.value != "all" ? element.country === country.value : element
+        )
+        .filter((element) =>
+            checkOut.value != ""
+                ? dateRange(element.availabilityFrom) >= filterDates(checkIn.value) &&
+                dateRange(element.availabilityTo) <= filterDates(checkOut.value)
+                : element
+        )
+        .filter((element) =>
+            price.value != "all"
+                ? element.price === priceNumber(price.value)
+                : element
+        )
+        .filter((element) =>
+            rooms.value != "all" ? roomSize(element.rooms) === rooms.value : element
+        );
 };
 
 country.addEventListener("change", () => showCard(Filter()));
