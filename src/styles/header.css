@@ -272,7 +272,7 @@
   }
 
 
-  @media only screen and (min-width: 750px)  {
+  @media only screen and (min-width: 750px) {
 
     :root {
       min-width: 426px;
@@ -297,15 +297,16 @@
     }
     
     .hotel__Search {
+      width: 80%;
       display: flex;
       flex-direction: row;
-      justify-content: left;
+      justify-content: space-around;
       align-items: center; 
-      background-color: rgba(228, 228, 228, 0.9);
-      margin: 0 16px;
-      padding: 10px;
+      background-color: transparent;
+      margin: 0 auto;
       border-radius: 8px;
     }
+    
     .dates{
       /* margin: 5px 0px; */
       margin-left : 5px;
@@ -313,7 +314,6 @@
       margin-top: 5px;
       margin-bottom: 5px;
       padding-right: 0px;
-
     }
 
     .location{
@@ -327,13 +327,6 @@
     .dates__price{
       padding-left: 0px;
       margin-left: 0px;
-    }
-    .price{
-      width: auto;
-    }
-
-    .rooms{
-      width: auto;
     }
 
     .button__Clear{

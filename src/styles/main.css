@@ -76,11 +76,11 @@
   }
   
 
-  @media only screen and (min-width: 900px){
+  @media only screen and (min-width: 750px){
     
     :root {
-      min-width: 1200px;
-      max-width: 1920px;
+      min-width: 426px;
+      max-width: 767px;
       height: 1080px;
       font-family: "Roboto", sans-serif;
     }
@@ -93,9 +93,24 @@
     }
 
     .card{
-      width: 580px;
-      height: 400px;
+      width: 420px;
+      height: 300px;
       background-size: 100% 100%;
     }
 
   }
+
+  @media only screen and (min-width: 900px){
+    :root {
+      min-width: 1024px;
+      max-width: 1920px;
+      height: 1080px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    /* .card{
+      width: 580px;
+      height: 400px;
+      background-size: 100% 100%;
+    } */
+  } 
