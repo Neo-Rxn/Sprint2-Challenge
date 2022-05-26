@@ -14,6 +14,7 @@ const price = document.getElementById("price");
 const rooms = document.getElementById("rooms");
 const clear = document.getElementById("clear");
 const hotelData = await requestHotelApi();
+const btn = document.querySelector(".btn-toggle")
 
 initialDates();
 showCard(hotelData);
@@ -44,3 +45,5 @@ price.addEventListener("change", () => showCard(Filter()));
 rooms.addEventListener("change", () => showCard(Filter()));
 checkOut.addEventListener("change", () => showCard(Filter()));
 clear.addEventListener("click", () => clearData());
+
+btn.addEventListener("click", ()=>document.body.classList.toggle("dark-theme"))

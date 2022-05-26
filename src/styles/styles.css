@@ -7,6 +7,63 @@
 :root {
   min-width: 320px;
   max-width: 480px;
-  height: 1080px;
+  /* height: 1080px; */
   font-family: "Roboto", sans-serif;
 }
+
+#card__contents {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.card__Bookit {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.dark-theme{
+  background-color: #212F3C;
+}
+body.dark-theme  #card__contents {
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: #F4D03F; 
+  /* color: #B7950B; */
+}
+
+body.dark-theme .card__Bookit {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #F4D03F;
+}
+
+body.dark-theme .card {
+  border: 1px solid #F4D03F;
+}
+
+body.dark-theme .hotel__Search {
+  background-color: rgba(33, 47, 60, 0.6);
+}
+
+body.dark-theme .title {
+  color: #F4D03F;
+}
+
+
+body.dark-theme .subtitle {
+  color: #F4D03F;
+}
+
+body.dark-theme .card__more {
+  border: 1px solid #F4D03F;
+}
+
+body.dark-theme .btn-toggle{
+  color: #F4D03F ;
+}
+/* body.dark-theme .filter{
+  color: #F4D03F;
+  background-color: #212F3C;
+}
+
+body.dark-theme .location > img {
+  background-color: #212F3C;
+  mask-image: #F4D03F;
+} */

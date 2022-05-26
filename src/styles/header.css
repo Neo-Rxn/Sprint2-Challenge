@@ -33,9 +33,21 @@
     margin-right: 16px;
   }
   
+  .btn-toggle{
+    font-size: 24px;
+    color: white;
+    background-color: transparent;
+    border: none;
+  }
+
+  .btn-toggle:hover{
+    cursor: pointer;
+  }
+  
   .hotel__Search {
     display: flex;
     flex-direction: column;
+    /* flex-wrap: nowrap; */
     justify-content: left;
     align-items: center; 
     background-color: rgba(228, 228, 228, 0.9);
@@ -49,14 +61,14 @@
       display: flex;
       flex-direction: row;
       justify-content: left;
-    align-items: center;
+      align-items: center;    
   }
   
   .location > img {
     width: 16px;
     height: 30px;
     margin-right: 0;
-    margin-top: 8px;
+    /* margin-top: 8px; */
     margin-left: 0;
     padding-left: 0;
     background-color: white;
@@ -67,7 +79,7 @@
     margin-left: 0;
     margin-right: 6px;
     height: 30px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
   }
   
   .select > select {
@@ -240,4 +252,91 @@
   border-radius: 6px;
   border: none;
   margin: 6px;
+  }
+
+
+  .subtitle{
+    display: none;
+    width: 100%;
+    margin-left: 16px;
+    margin-top: 15px;
+    font-family: "Pacifico", cursive;
+    font-weight: 300;
+    font-size: 48px;
+    color: white;
+  }
+
+  .subtitle__text{
+    margin-left: 4px;
+
+  }
+
+
+  @media only screen and (min-width: 750px)  {
+
+    :root {
+      min-width: 426px;
+      max-width: 767px;
+      height: 1080px;
+      font-family: "Roboto", sans-serif;
+    }
+    .header {
+      width: 100%;
+      height: 308px;
+      background-image: url(../resources/images/cover.png);
+      background-size: cover;
+    }
+    
+    .title{
+      font-size: 72px;
+
+    }
+    
+    .subtitle {
+      display: flex;
+    }
+    
+    .hotel__Search {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center; 
+      background-color: rgba(228, 228, 228, 0.9);
+      margin: 0 16px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .dates{
+      /* margin: 5px 0px; */
+      margin-left : 5px;
+      margin-right: 0px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding-right: 0px;
+
+    }
+
+    .location{
+      width: 70%;
+    }
+    .select{
+      margin-right: 0;
+      width: 100%;
+    }
+    
+    .dates__price{
+      padding-left: 0px;
+      margin-left: 0px;
+    }
+    .price{
+      width: auto;
+    }
+
+    .rooms{
+      width: auto;
+    }
+
+    .button__Clear{
+      width: 8%;
+    }
   }
