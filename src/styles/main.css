@@ -102,7 +102,7 @@
 
   @media only screen and (min-width: 900px){
     :root {
-      min-width: 1024px;
+      min-width: 900px;
       max-width: 1920px;
       height: 1080px;
       font-family: "Roboto", sans-serif;
@@ -114,3 +114,73 @@
       background-size: 100% 100%;
     } */
   } 
+
+  
+  @media only screen and (min-width: 1024px) {
+    :root {
+      min-width: 1440px;
+      /* max-width: 1920px; */
+      height: 1080px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .card{
+      width: 600px;
+      height: 412px;
+      background-size: 100% 100%;
+       /* background-color: rgba(0, 0, 0, 0.5); */
+    } 
+
+    .card :hover{
+       filter:sepia(50%);
+       cursor: pointer;
+    }
+
+    #card__contents {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100%;
+      padding: 1px;
+      /* background-color: rgba(0, 0, 0, 0.5); */
+      background-size: cover;
+      border-radius: 15px;
+      /* color: white; */
+    }
+
+    .card__more {
+    display:none;
+    }
+
+    #lowerText h2 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    #lowerText > img {
+      max-width: 20px;
+      height: auto;
+    }
+
+    #lowerText {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .card__Bookit {
+      align-items: flex-end;
+      justify-content: right;
+      border: 1px solid white;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      margin-top: -20px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      /* background-color: rgba(0, 0, 0, 0.6); */
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+  }

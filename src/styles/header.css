@@ -234,6 +234,7 @@
     border: 0px solid  rgba(228, 228, 228, 0.9);
     background-color: white;
     }
+
   .button__Clear{
     display: flex;
     justify-content: flex-end;
@@ -243,6 +244,7 @@
     font-size: 12px;
     font-weight: 500;
   }
+
   
   .clear{
   color: #fff;
@@ -253,6 +255,10 @@
   border: none;
   margin: 6px;
   }
+
+.clear:hover{
+  cursor: pointer;
+}
 
 
   .subtitle{
@@ -332,4 +338,27 @@
     .button__Clear{
       width: 8%;
     }
+
+    .filter{
+      font-size: 22px;
+    }
+
+    .select select{
+      font-size: 22px;
+    }
+
+    #checkIn,
+    #checkOut
+    {
+      font-size: 22px;
+    }
+
+    .clear{
+      font-size: 18px;
+      height: 34px;
+      width: 80px;
+      border: 1px solid white;
+      margin-top: 0px;
+    }
   }
+
