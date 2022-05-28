@@ -61,6 +61,14 @@
     max-width: 15px;
     height: auto;
   }
+
+  .description{
+   display: none;
+   font-size: 14px;
+   width: 75%;
+   margin-right: 0px;
+   margin-top: 10px;
+  }
   
   .card__Bookit {
     align-items: flex-end;
@@ -142,7 +150,7 @@
       position: absolute;
       top:20px;
       right: 10px;
-      direction: rtl;
+      text-align: right;
   }
 
 
@@ -171,6 +179,10 @@
       font-weight: 700;
     }
 
+    .card__contents:hover #lowerText>h2{
+      font-size: 24px;
+    }
+
     #lowerText > img {
       max-width: 20px;
       height: auto;
@@ -179,6 +191,10 @@
     #lowerText {
       font-size: 20px;
       font-weight: 400;
+    }
+
+    .card__contents:hover .description{
+      display: flex;
     }
 
     .card__Bookit {
@@ -190,13 +206,13 @@
       margin-top: -20px;
       padding: 10px 15px;
       border-radius: 8px;
-      /* background-color: rgba(0, 0, 0, 0.6); */
+       /* background-color: rgba(0, 0, 0, 0.6);  */
       font-weight: 500;
       font-size: 20px;
     }
 
     .card__contents:hover > .card__Bookit {
-      margin-top:100px;
+      margin-top:170px;
     }
   
   }

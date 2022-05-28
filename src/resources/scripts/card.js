@@ -17,6 +17,7 @@ export const showCard = async (hoteles) => {
               <h2>${element.name}</h2>
               <img src="${selectedFlags(element.country)}" > <span>${element.country}</span>
               <p>${element.rooms} Habitaciones - ${hotelsPrices(element.price)}</p>
+              <p class="description">${element.description}</p>
             </div>
             <div class="card__Bookit">
               <p>Book it!</p>
