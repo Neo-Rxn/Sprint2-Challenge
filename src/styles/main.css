@@ -2,6 +2,7 @@
 .main {
     width: 100%;
     height: 70%;
+    max-height: 1080px;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -23,7 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: left;
+    justify-content: flex-end;
     width: 100%;
     height: 100%;
     padding: 1px;
@@ -128,13 +129,23 @@
       width: 600px;
       height: 412px;
       background-size: 100% 100%;
-       /* background-color: rgba(0, 0, 0, 0.5); */
+       background-color: rgba(0, 0, 0, 0.5); 
     } 
 
-    .card :hover{
-       filter:sepia(50%);
+    .card:hover{
        cursor: pointer;
+       position:relative
     }
+
+    .card__contents:hover > div
+    {
+      position: absolute;
+      top:20px;
+      right: 10px;
+      direction: rtl;
+  }
+
+
 
     #card__contents {
       display: flex;
@@ -144,11 +155,12 @@
       width: 100%;
       height: 100%;
       padding: 1px;
-      /* background-color: rgba(0, 0, 0, 0.5); */
       background-size: cover;
       border-radius: 15px;
       /* color: white; */
     }
+
+
 
     .card__more {
     display:none;
@@ -183,4 +195,8 @@
       font-size: 20px;
     }
 
+    .card__contents:hover > .card__Bookit {
+      margin-top:100px;
+    }
+  
   }
