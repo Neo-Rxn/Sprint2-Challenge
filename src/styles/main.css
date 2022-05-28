@@ -9,6 +9,21 @@
     overflow-y: scroll;
   }
   
+  .noResult{
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    width: 95%;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0.8) ;
+    border-radius: 8px;
+    color: #3949AB;
+    margin:  5px 10px;
+
+
+  }
   .card {
     max-width: 100%;
     height: 100px;
@@ -128,13 +143,13 @@
   @media only screen and (min-width: 1024px) {
     :root {
       min-width: 1440px;
-      /* max-width: 1920px; */
+      max-width: 1920px;
       height: 1080px;
       font-family: "Roboto", sans-serif;
     }
 
     .card{
-      width: 600px;
+      width: 580px;
       height: 412px;
       background-size: 100% 100%;
        background-color: rgba(0, 0, 0, 0.5); 
@@ -152,7 +167,6 @@
       right: 10px;
       text-align: right;
   }
-
 
 
     #card__contents {

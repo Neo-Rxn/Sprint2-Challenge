@@ -6,6 +6,7 @@ const container = document.getElementById("main")
 
 export const showCard = async (hoteles) => {
     container.innerHTML =""
+    if (hoteles.length != 0){
     hoteles.forEach(element => {
         container.innerHTML += ` 
         <div id="card" class="card">       
@@ -28,4 +29,12 @@ export const showCard = async (hoteles) => {
       let bg =document.getElementsByClassName("card")
       bg[hoteles.indexOf(element)].style.backgroundImage = `url(${element.photo})`
     });
+  }else{
+    container.innerHTML = ` 
+    <div class="noResult"
+      <p> <i class="fas fa-exclamation-triangle">&nbsp;&nbsp;</i>
+        Sorry we couldn't find any hotel. Try changing your Search Filters </p>
+    </div>`
+    
+  }
 }

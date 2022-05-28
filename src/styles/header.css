@@ -303,7 +303,7 @@
     }
     
     .hotel__Search {
-      width: 80%;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -340,17 +340,17 @@
     }
 
     .filter{
-      font-size: 22px;
+      font-size: 18px;
     }
 
     .select select{
-      font-size: 22px;
+      font-size: 18px;
     }
 
     #checkIn,
     #checkOut
     {
-      font-size: 22px;
+      font-size: 18px;
     }
 
     .clear{
@@ -362,3 +362,27 @@
     }
   }
 
+  @media only screen and (min-width: 1024px) {
+    :root {
+      min-width: 1440px;
+      /* max-width: 1920px; */
+      height: 1080px;
+      font-family: "Roboto", sans-serif;
+    }
+    .hotel__Search {
+      width: 80%;
+    }
+      .filter{
+        font-size: 22px;
+      }
+  
+      .select select{
+        font-size: 22px;
+      }
+  
+      #checkIn,
+      #checkOut
+      {
+        font-size: 22px;
+      }
+  }
