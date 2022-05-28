@@ -6,8 +6,22 @@ From a technical point of view, the goal of the challenge, is to use all the dif
 
 This challenge allow us to get acquainted to DOM Manipulation and array manipulation using only vanilla javascript and improve our abilities with CSS.
 
+Dark Mode
+
 ![imagename](./src/resources/images/darkMode.png)
+Light Mode
+
 ![imagename](./src/resources/images/lightMode.png)
+Mobile
+
 ![imagename](./src/resources/images/mobile.png)
 
-The web was built based on the backlog document provided
+The web was built based on the backlog and Figma documents provided, also the data was extracted from API provided.
+
+To run the project:
+
+- Clone this repo
+- Start an empty workspace on Vscode
+- Add the project to the workspace
+- Run a liveServer instance
+- Now on the web browser should appear the project running
