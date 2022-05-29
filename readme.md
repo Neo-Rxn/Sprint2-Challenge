@@ -25,3 +25,6 @@ To run the project:
 - Add the project to the workspace
 - Run a liveServer instance
 - Now on the web browser should appear the project running
+
+## Live Demo
+live version at : https://neo-rxn.github.io/Sprint2-Challenge/
